@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome -->
+
+   
+   
+     
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+    
+</head>
+<body>
+    <header class="d-flex align-items-center ">
+        <div class="header__logo d-flex align-items-center">
+            <div class="header-menu-icon d-flex align-items-center">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <a href="" class="d-block">
+                LOGO
+            </a>
+        </div>
+        <div class="header__inner d-flex align-items-center justify-content-between">
+            <form action="" class="header__form">
+                <div class="form-group mb-0">
+                    <button class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="fill: #555555;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                    </button>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+            <div class="header__user d-flex align-items-center" data-toggle="modal" data-target="#modal-login">
+                <div class="user-avatar d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #fff;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                </div>
+                <span>Decyber</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgb(255, 255, 255);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- modal login -->
+    <div class="modal fade modal-login" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">HI</h5>
+                <p>Welcome back, sign in to continue</p>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" placeholder="Username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                </form>
+                <div class="modal-footer d-flex align-items-center justify-content-between">
+                    <a href="" class="sign-up d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C9.243 2 7 4.243 7 7v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7zm4 10.723V20h-2v-2.277a1.993 1.993 0 0 1 .567-3.677A2.001 2.001 0 0 1 14 16a1.99 1.99 0 0 1-1 1.723z"></path></svg>
+                        <span>Sign Up</span>
+                    </a>
+                    <a href="" class="sign-up sign-in d-flex align-items-center">
+                        <span>Sign In</span>
+                        <img src="./images/sign-in.png" alt="">
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- end modal login -->
+  
+    <main>
+        <div class="wrap-content-page d-flex">
+            <aside class="wrap-aside">
+                <ul class="main-menu">
+                    <li class="active">
+                        <a href="" class="d-flex align-items-center">
+                            <svg height="24" viewBox="0 0 24 24" width="24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm10 10h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zM17 3c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zM7 13c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"/></svg>
+                            <p class="d-flex align-items-center">
+                                Home<span></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="d-flex align-items-center">
+                            <svg height="24" viewBox="0 0 24 24" width="24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm10 10h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zM17 3c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zM7 13c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"/></svg>
+                            <p class="d-flex align-items-center">
+                                Top IMDB<span></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="d-flex align-items-center">
+                            <svg height="24" viewBox="0 0 24 24" width="24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm10 10h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zM17 3c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zM7 13c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"/></svg>
+                            <p class="d-flex align-items-center">
+                                Movies<span></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="d-flex align-items-center">
+                            <svg height="24" viewBox="0 0 24 24" width="24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm10 10h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zM17 3c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zM7 13c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"/></svg>
+                            <p class="d-flex align-items-center">
+                                TV Shows<span></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="d-flex align-items-center">
+                            <svg height="24" viewBox="0 0 24 24" width="24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm10 10h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zM17 3c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zM7 13c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"/></svg>
+                            <p class="d-flex align-items-center">
+                                Category<span></span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="d-flex align-items-center">
+                            <svg height="20" fill="#fff" viewBox="0 0 512 512" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M64 496C64 504.8 56.75 512 48 512h-32C7.25 512 0 504.8 0 496V32c0-17.75 14.25-32 32-32s32 14.25 32 32V496zM476.3 0c-6.365 0-13.01 1.35-19.34 4.233c-45.69 20.86-79.56 27.94-107.8 27.94c-59.96 0-94.81-31.86-163.9-31.87C160.9 .3055 131.6 4.867 96 15.75v350.5c32-9.984 59.87-14.1 84.85-14.1c73.63 0 124.9 31.78 198.6 31.78c31.91 0 68.02-5.971 111.1-23.09C504.1 355.9 512 344.4 512 332.1V30.73C512 11.1 495.3 0 476.3 0z"/></svg>
+                            <p class="d-flex align-items-center">
+                                Country<span></span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="country-list">
+                    <li class="country__item active">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Mexico</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Australia</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Netherlands</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Austria</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">New Zealand</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                    <li class="country__item">
+                        <a href="">Argentina</a>
+                    </li>
+                </ul>
+
+                <ul class="menu-other">
+                    <li>
+                        <a href="" class="d-flex align-items-center">
+                            <span>/</span>
+                            Terms of service
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="d-flex align-items-center">
+                            <span>/</span>
+                           Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="d-flex align-items-center">
+                            <span>/</span>
+                            Sitemap
+                        </a>
+                    </li>
+                </ul>
+                <span class="copyright">
+                    © 2020 domain.com
+                </span>
+            </aside>
+
+            <div class="wrap-content">
+                <section class="edit-profile">
+                    <h2 class="text-center">Edit Profile</h2>
+                    <div class="path d-flex align-items-center justify-content-center">
+                        <a href="">Home</a>
+                        <span>/</span>
+                        <a href="">User</a>
+                        <span>/</span>
+                        <p>decyber</p>
+                    </div>
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group col-lg-6 col-md-12">
+                                <input type="text" placeholder="decyber" class="form-control">
+                                <button type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #fff;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                                </button>
+                            </div>
+                            <div class="form-group col-lg-6 col-md-12">
+                                <input type="email" placeholder="mr.a@gmail.com" class="form-control">
+                                <button type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>
+                                </button>
+                            </div>
+                            <div class="form-group col-lg-6 col-md-12">
+                                <input type="password" placeholder="Password" class="form-control">
+                                <button type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C9.243 2 7 4.243 7 7v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7zm4 10.723V20h-2v-2.277a1.993 1.993 0 0 1 .567-3.677A2.001 2.001 0 0 1 14 16a1.99 1.99 0 0 1-1 1.723z"></path></svg>
+                                </button>
+                            </div>
+                            <div class="form-group col-lg-6 col-md-12">
+                                <input type="password" placeholder="Password confirmation" class="form-control">
+                                <button type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C9.243 2 7 4.243 7 7v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7zm4 10.723V20h-2v-2.277a1.993 1.993 0 0 1 .567-3.677A2.001 2.001 0 0 1 14 16a1.99 1.99 0 0 1-1 1.723z"></path></svg>
+                                </button>
+                            </div>
+                            <div class="col-12 form-group">
+                                <p>Ignore password fields if you don't want to change. </p>
+                            </div>
+                            <div class="col-12 d-inline-flex justify-content-center mt-1 mb-5">
+                                <button type="submit">Save Changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="wrap-list-movie">
+                    <div class="wrap__title d-flex justify-content-center align-items-center">
+                       <h3>Watch List</h3>
+                    </div>
+                    <ul class="list-movie d-flex flex-wrap">
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-7.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">The Lost City</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Spider Man</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                      
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Picard</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Picard</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Picard</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Picard</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Picard</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-7.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">The Lost City</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Spider Man</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                      
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Picard</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Picard</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Picard</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/movie01.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Picard</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie__item">
+                            <div class="thumb hover-show-icon-play">
+                                <a href="">
+                                    <img src="./images/Layer-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h3><a href="">Picard</a></h3>
+                                <div class="desc__info d-flex align-items-center">
+                                    <span>HD</span>
+                                    <p>2022  /  108m </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+   
+
+    <script src="./vendor/jquery.js"></script>
+    <script src="./vendor/bootstrap-4.6.1/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./vendor/slick-slider/slick.js"></script>
+
+    <!-- config slider -->
+    <script>
+       
+    </script>
+    <!-- config slider -->
+
+</body>
+</html>
