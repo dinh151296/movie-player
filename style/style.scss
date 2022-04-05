@@ -606,6 +606,7 @@ header {
                     border-radius: 38px;
                     height: 3.8rem;
                     background-color: #191800;
+                    position: relative;
                     .option__item {
                         position: relative;
                         padding: 5px 1.2rem;
@@ -651,7 +652,7 @@ header {
                                 .select-server__item {
                                     font-size: 1.4rem;
                                     padding: 5px 1.8rem;
-                                    white-space: normal;
+                                    white-space: nowrap;
                                     color: #9d9d9d;
                                     transition: 0.2s;
                                     img {
@@ -668,6 +669,47 @@ header {
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }
+                    .select-season {
+                        position: absolute;
+                        width: fit-content;
+                        top: calc(100% + 5px);
+                        border: 1px solid #9c9c9c;
+                        color: #9c9c9c;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        height: auto;
+                        background-color: #282828;
+                        border-radius: 10px;
+                        padding: 0.8rem 0px;
+                        font-size: 1.4rem;
+                        min-width: 100%;
+                        .menu__season {
+                            position: relative;
+                            li {
+                                position: relative;
+                                font-size: 1.4rem;
+                                padding: 4.5px 1rem;
+                                white-space: nowrap;
+                                color: #9d9d9d;
+                                transition: 0.2s;
+                                cursor: pointer;
+                                img {
+                                    width: 1.2rem;
+                                    transition: 0.2s;
+                                    opacity: 0;
+                                }
+                                &:hover {
+                                    background-color: #1d1d1d;
+                                    opacity: 1;
+                                    & > img {
+                                        margin-left: 6px;
+                                        opacity: 1;
+                                    }
+                                }
+                                
                             }
                         }
                     }

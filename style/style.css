@@ -11708,6 +11708,7 @@ header .header__inner .header__form .form-group > button svg {
   border-radius: 38px;
   height: 3.8rem;
   background-color: #191800;
+  position: relative;
 }
 
 .wrap-content-page .wrap-content .content-page-player .option-play-video .option__item {
@@ -11763,7 +11764,7 @@ header .header__inner .header__form .form-group > button svg {
 .wrap-content-page .wrap-content .content-page-player .option-play-video .option__item .select-option li .select-server__item {
   font-size: 1.4rem;
   padding: 5px 1.8rem;
-  white-space: normal;
+  white-space: nowrap;
   color: #9d9d9d;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -11782,6 +11783,57 @@ header .header__inner .header__form .form-group > button svg {
 }
 
 .wrap-content-page .wrap-content .content-page-player .option-play-video .option__item .select-option li .select-server__item:hover img {
+  margin-left: 6px;
+  opacity: 1;
+}
+
+.wrap-content-page .wrap-content .content-page-player .option-play-video .select-season {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: calc(100% + 5px);
+  border: 1px solid #9c9c9c;
+  color: #9c9c9c;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: auto;
+  background-color: #282828;
+  border-radius: 10px;
+  padding: 0.8rem 0px;
+  font-size: 1.4rem;
+  min-width: 100%;
+}
+
+.wrap-content-page .wrap-content .content-page-player .option-play-video .select-season .menu__season {
+  position: relative;
+}
+
+.wrap-content-page .wrap-content .content-page-player .option-play-video .select-season .menu__season li {
+  position: relative;
+  font-size: 1.4rem;
+  padding: 4.5px 1rem;
+  white-space: nowrap;
+  color: #9d9d9d;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.wrap-content-page .wrap-content .content-page-player .option-play-video .select-season .menu__season li img {
+  width: 1.2rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.wrap-content-page .wrap-content .content-page-player .option-play-video .select-season .menu__season li:hover {
+  background-color: #1d1d1d;
+  opacity: 1;
+}
+
+.wrap-content-page .wrap-content .content-page-player .option-play-video .select-season .menu__season li:hover > img {
   margin-left: 6px;
   opacity: 1;
 }
